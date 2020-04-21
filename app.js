@@ -21,3 +21,14 @@ async function getAll(){
     console.log(result1+" "+result2);
 }
 getAll();
+
+async function asyncF1(){
+    const res= await asynFunction();
+    return res;
+}
+
+// calling using then
+
+asyncF1().then(res=>{
+    console.log('----------res ------------',res)
+})
